@@ -1,10 +1,18 @@
-## Getting set up
+# Getting started
 
-`$ npm i`
+### 1. Clone this repo
+HTTPS: `$ git clone https://github.com/uo-cit-alumni/cit-alumni-site`
+SSH: `$ git clone git@github.com:uo-cit-alumni/cit-alumni-site`
+
+then `$ cd cit-alumni-site`
+
+### 2. Install dependencies
+You will need Meteor and Node/npm
+
+`$ npm i` / `$ npm install`
 
 
-## Run 
-
+### 3. Run it
 `$ meteor`
 
-Go to `localhost:3000` in your browser.
+then go to `localhost:3000` in your browser
