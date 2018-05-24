@@ -3,7 +3,7 @@
 ### 1. Clone this repo
 HTTPS: `$ git clone https://github.com/uo-cit-alumni/cit-alumni-site`
 
-SSH: `$ git clone git@github.com:uo-cit-alumni/cit-alumni-site`
+or SSH: `$ git clone git@github.com:uo-cit-alumni/cit-alumni-site`
 
 then `$ cd cit-alumni-site`
 
