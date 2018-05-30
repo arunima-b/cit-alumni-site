@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ErrorBoundary from './ErrorBoundary.jsx';
+
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -7,7 +9,11 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <h1>hi</h1>
-    )
+      <ErrorBoundary>
+        <div id='app'>
+          <h1>hi</h1>
+        </div>
+      </ErrorBoundary>
+    );
   }
 }
