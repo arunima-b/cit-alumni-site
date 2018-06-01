@@ -17,7 +17,7 @@ export default class App extends Component {
             <Menu.Item
               name="menu1"
               active={true}
-              active={this.state.avtiveItem === 'menu1'}
+              active={this.state.activeItem === 'menu1'}
               onClick={this.handleMenuItemClick.bind(this)}
               >Home
             </Menu.Item>
@@ -25,7 +25,7 @@ export default class App extends Component {
             <Menu.Item
               name="menu2"
               active={true}
-              active={this.state.avtiveItem === 'menu2'}
+              active={this.state.activeItem === 'menu2'}
               onClick={this.handleMenuItemClick.bind(this)}
               >News
             </Menu.Item>
@@ -33,7 +33,7 @@ export default class App extends Component {
             <Menu.Item
               name="menu3"
               active={true}
-              active={this.state.avtiveItem === 'menu3'}
+              active={this.state.activeItem === 'menu3'}
               onClick={this.handleMenuItemClick.bind(this)}
               >Courses
             </Menu.Item>
@@ -41,7 +41,7 @@ export default class App extends Component {
             <Menu.Item
               name="menu3"
               active={true}
-              active={this.state.avtiveItem === 'menu3'}
+              active={this.state.activeItem === 'menu3'}
               onClick={this.handleMenuItemClick.bind(this)}
               >People
             </Menu.Item>
