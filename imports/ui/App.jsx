@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Image, Menu, Header, Segment } from 'semantic-ui-react';
 
+import Homepage from './Homepage.jsx';
+import Newsfeed from './Newsfeed.jsx';
+import People from './People.jsx';
 import ErrorBoundary from './ErrorBoundary.jsx';
 
 export default class App extends Component {
@@ -16,11 +19,25 @@ export default class App extends Component {
   }
 
   render() {
+    let content;
+    switch(this.state.activeItem) {
+      case 'home':
+        content = <Homepage />;
+        break;
+
+      case 'news':
+        content = <Newsfeed />;
+        break;
+
+      case 'people':
+        content = <People />;
+        break;
+    }
+
     return (
       <ErrorBoundary>
-          <Segment>
+        <Segment>
           <Menu>
-
             <Menu.Item
               name="home"
               active={true}
@@ -44,10 +61,13 @@ export default class App extends Component {
               onClick={this.handleMenuItemClick.bind(this)}
               >People
             </Menu.Item>
-
           </Menu>
-          </Segment>
-          </ErrorBoundary>
+        </Segment>
+
+        <Segment>
+          {content}
+        </Segment>
+      </ErrorBoundary>
     );
   }
 }
