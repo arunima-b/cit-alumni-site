@@ -1,5 +1,7 @@
 import React from 'react';
 
+import PersonCard from './PersonCard.jsx';
+
 export default class People extends React.Component {
   constructor(props) {
     super(props);
@@ -7,7 +9,9 @@ export default class People extends React.Component {
 
   render() {
     return (
-      <h1>People</h1>
+      <div>
+        <h1>People</h1>
+      </div>
     )
   }
 }
