@@ -6,6 +6,13 @@ import ErrorBoundary from './ErrorBoundary.jsx';
 export default class App extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      activeItem: 'home'
+    }
+  }
+
+  handleMenuItemClick(e, {name}) {
+    this.setState({ activeItem: name });
   }
 
   render() {
