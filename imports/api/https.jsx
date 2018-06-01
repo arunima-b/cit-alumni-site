@@ -3,7 +3,11 @@ import { HTTP } from 'meteor/http';
 
 if (Meteor.isServer) {
   Meteor.methods({
-    getNewsletters() {
+
+    ///
+    // Newsletters
+    ///
+    getAllNewsletters() {
       let result;
 
       try { // Trap non-HTTP errors
@@ -33,9 +37,42 @@ if (Meteor.isServer) {
       }
     },
 
-    getPeople() {
+    getSingleNewsletter(postId) {
       // TODO
       return;
-    }
+    },
+
+    addNewsletter() {
+      // TODO
+      return;
+    },
+
+    removeNewsletter() {
+      // TODO
+      return;
+    },
+
+    ///
+    // People
+    ///
+    getAllPeople() {
+      // TODO
+      return;
+    },
+
+    getPerson(userId) {
+      // TODO
+      return;
+    },
+
+    addPerson(personObj) {
+      // TODO
+      return;
+    },
+
+    removePerson(userId) {
+      // TODO
+      return;
+    },
   });
 }
