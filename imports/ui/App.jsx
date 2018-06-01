@@ -22,33 +22,25 @@ export default class App extends Component {
           <Menu>
 
             <Menu.Item
-              name="menu1"
+              name="home"
               active={true}
-              active={this.state.activeItem === 'menu1'}
+              active={this.state.activeItem === 'home'}
               onClick={this.handleMenuItemClick.bind(this)}
               >Home
             </Menu.Item>
 
             <Menu.Item
-              name="menu2"
+              name="news"
               active={true}
-              active={this.state.activeItem === 'menu2'}
+              active={this.state.activeItem === 'news'}
               onClick={this.handleMenuItemClick.bind(this)}
               >News
             </Menu.Item>
 
             <Menu.Item
-              name="menu3"
+              name="people"
               active={true}
-              active={this.state.activeItem === 'menu3'}
-              onClick={this.handleMenuItemClick.bind(this)}
-              >Courses
-            </Menu.Item>
-
-            <Menu.Item
-              name="menu3"
-              active={true}
-              active={this.state.activeItem === 'menu3'}
+              active={this.state.activeItem === 'people'}
               onClick={this.handleMenuItemClick.bind(this)}
               >People
             </Menu.Item>
