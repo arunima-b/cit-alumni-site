@@ -5,6 +5,7 @@ import Homepage from './Homepage.jsx';
 import Newsfeed from './Newsfeed.jsx';
 import People from './People.jsx';
 import ErrorBoundary from './ErrorBoundary.jsx';
+import AccountsUIWrapper from './AccountsUIWrapper.jsx';
 
 export default class App extends Component {
   constructor(props) {
@@ -36,6 +37,14 @@ export default class App extends Component {
 
     return (
       <ErrorBoundary>
+        <Segment>
+
+        <div id='header'>
+              <AccountsUIWrapper />
+        </div>
+
+        </Segment>
+        
         <Segment>
           <Menu>
             <Menu.Item
