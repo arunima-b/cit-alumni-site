@@ -1,16 +1,13 @@
 import { Meteor } from 'meteor/meteor';
 import { Mongo } from 'meteor/mongo';
 
-export const Users = new Mongo.Collection('users');
-export const Newsletters = new Mongo.Collection('newsletters');
-
 if (Meteor.isServer) {
   Meteor.methods({
     ///
     // Users
     ///
     getAllUsers() {
-      return Users.find();
+      return Meteor.users.find();
     },
 
     getUser(userId) {
