@@ -38,13 +38,11 @@ export default class App extends Component {
     return (
       <ErrorBoundary>
         <Segment>
-
-        <div id='header'>
-              <AccountsUIWrapper />
-        </div>
-
+          <div id='header'>
+            <AccountsUIWrapper />
+          </div>
         </Segment>
-        
+
         <Segment>
           <Menu>
             <Menu.Item
