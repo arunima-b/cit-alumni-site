@@ -9,8 +9,7 @@ const express = require('express'),
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('/', (req, res) => {
-  //res.sendFile(path.join(__dirname, 'build', 'index.html'));
-  res.send('hi');
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 const PORT = 3000;
