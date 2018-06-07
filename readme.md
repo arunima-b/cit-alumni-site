@@ -1,20 +1,31 @@
 # Getting started
 
-### 1. Clone this repo
+### Clone this repo
 HTTPS: `$ git clone https://github.com/uo-cit-alumni/cit-alumni-site`
 
 or SSH: `$ git clone git@github.com:uo-cit-alumni/cit-alumni-site`
 
 then `$ cd cit-alumni-site`
 
-### 2. Install dependencies
+### Install dependencies
 You should have yarn, an npm wrapper: `$ npm i -g yarn`.
 
 In the project directory, run `$ yarn install`.
 
+### Database connection file
+Create a file `secret/db.js` that looks like:
+
+```
+exports = {
+  host: 'localhost',
+  user: 'citadmin',
+  password: 'secret',
+  database: 'db_name'
+};
+```
 ### 3. Run it
-`$ yarn start` - Starts development server.
+`$ yarn dev` - Start development server.
 
-`$ yarn build` - Bundles files for production.
+`$ yarn build` - Bundles files into `build/`.
 
-`$ yarn test` - Runs tests.
+`$ yarn start` - Starts prod server (must build first).
