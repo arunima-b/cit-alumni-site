@@ -27,6 +27,8 @@ exports = {
 ### Start database
 Install MySQL: https://dev.mysql.com/doc/mysql-getting-started/en/
 
+Check the status to make sure it's running, if not start it:
+
 `$ sudo service mysql [start | stop | restart | status]`
 
 #### Create citadmin user
