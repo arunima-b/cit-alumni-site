@@ -4,7 +4,7 @@ const express = require('express'),
   mysql = require('mysql'),
   dbInfo = require(path.join(__dirname, 'secret', 'db.js'));
 
-//const dbConnection = mysql.createConnection(dbInfo)
+const dbConnection = mysql.createConnection(dbInfo)
 
 app.use(express.static(path.join(__dirname, 'build')));
 
