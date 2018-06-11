@@ -38,9 +38,6 @@ Install MySQL: https://dev.mysql.com/doc/mysql-getting-started/en/
 
 `mysql> FLUSH PRIVILEGES;`
 
-#### Create tables
-
-
 ### Start server
 
 There are two servers: the one that came with create-react-app, and the express
