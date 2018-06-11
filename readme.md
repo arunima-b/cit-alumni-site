@@ -40,11 +40,18 @@ Install MySQL: https://dev.mysql.com/doc/mysql-getting-started/en/
 
 ### Start server
 
-There are two servers: the one that came with create-react-app, and the express
-server found in server.js, where our API will live.
+There are two servers: the one that came with create-react-app which we can use
+for development, and the express server found in server.js, where our API is
+served from.
+
+For developing, use `$ yarn dev`. This will start both the development server
+and the API server.
+
+For production, run `$ yarn build` then `$ yarn start` to server bundled files
+as well as serve API.
+
+`$ yarn dev` - Starts development server that came with create-react-app.
 
 `$ yarn build` - Bundles files into `build/`.
 
 `$ yarn start` - Starts our express server (must build first).
-
-`$ yarn dev` - Starts development server that came with create-react-app.
