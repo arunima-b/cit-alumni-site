@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Menu, Segment } from 'semantic-ui-react';
+import { Image, Menu, Header, Segment } from 'semantic-ui-react';
 
 import ErrorBoundary from './ErrorBoundary.jsx';
 import Homepage from './Homepage.jsx';
@@ -36,10 +36,6 @@ export default class App extends Component {
         content = <People />;
         break;
 
-      case 'profile':
-        content = <Profile />;
-        break;
-
       default:
         content = <Homepage />;
         break;
@@ -51,6 +47,7 @@ export default class App extends Component {
           <Menu>
             <Menu.Item
               name="home"
+              active={true}
               active={this.state.activeItem === 'home'}
               onClick={this.handleMenuItemClick.bind(this)}
               >Home
@@ -58,6 +55,7 @@ export default class App extends Component {
 
             <Menu.Item
               name="news"
+              active={true}
               active={this.state.activeItem === 'news'}
               onClick={this.handleMenuItemClick.bind(this)}
               >News
@@ -65,6 +63,7 @@ export default class App extends Component {
 
             <Menu.Item
               name="people"
+              active={true}
               active={this.state.activeItem === 'people'}
               onClick={this.handleMenuItemClick.bind(this)}
               >People
