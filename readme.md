@@ -49,8 +49,8 @@ served from.
 For developing, use `$ yarn dev`. This will start both the development server
 and the API server.
 
-For production, run `$ yarn build` then `$ yarn start` to server bundled files
-as well as serve API.
+For production, run `$ yarn build` then `$ yarn start` to serve bundled files
+along with the API.
 
 `$ yarn dev` - Starts development server that came with create-react-app.
 
