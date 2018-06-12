@@ -5,6 +5,7 @@ import ErrorBoundary from './ErrorBoundary.jsx';
 import Homepage from './Homepage.jsx';
 import Newsfeed from './Newsfeed.jsx';
 import People from './People.jsx';
+import Profile from './Profile.jsx';
 
 import './App.css';
 
@@ -35,6 +36,10 @@ export default class App extends Component {
         content = <People />;
         break;
 
+      case 'profile':
+        content = <Profile />;
+        break;
+
       default:
         content = <Homepage />;
         break;
@@ -63,6 +68,13 @@ export default class App extends Component {
               active={this.state.activeItem === 'people'}
               onClick={this.handleMenuItemClick.bind(this)}
               >People
+            </Menu.Item>
+
+            <Menu.Item
+              name="profile"
+              active={this.state.activeItem === 'profile'}
+              onClick={this.handleMenuItemClick.bind(this)}
+              >Profile
             </Menu.Item>
           </Menu>
         </Segment>
