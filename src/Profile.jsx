@@ -62,7 +62,7 @@ export default class Profle extends React.Component {
     return (
     	<div>
     	<Form onSubmit={this.saveOnClick.bind(this)} >
-   			<Form.Input width={6} label='User Id' value={this.state.info onChange={this.infoOnChange}}/> 
+   			<Form.Input width={6} label='User Id' value={this.state.info} onChange={this.infoOnChange}}/> 
    			<Form.Checkbox label='Display as User Id' />
     		<Form.Group widths={6}>
     			<Form.Input fluid label='First Name' value={this.state.firstName} onChange={this.firstOnChange.bind(this)} />
