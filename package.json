@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "nodemon server.js",
-    "dev": "concurrently \"react-scripts start\" \"yarn server\"",
+    "dev": "concurrently \"react-scripts start\" \"yarn start\"",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
