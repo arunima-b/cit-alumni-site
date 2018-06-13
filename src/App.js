@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { Image, Menu, Header, Segment } from 'semantic-ui-react';
 
-import ErrorBoundary from './ErrorBoundary.jsx';
 import Homepage from './Homepage.jsx';
 import Newsfeed from './Newsfeed.jsx';
 import People from './People.jsx';
-
-import './App.css';
+import ErrorBoundary from './ErrorBoundary.jsx';
+import Profile from './Profile.jsx'
 
 export default class App extends Component {
   constructor(props) {
@@ -34,9 +33,8 @@ export default class App extends Component {
       case 'people':
         content = <People />;
         break;
-
-      default:
-        content = <Homepage />;
+      case 'profile':
+        content = <Profile />;
         break;
     }
 
@@ -66,6 +64,14 @@ export default class App extends Component {
               active={this.state.activeItem === 'people'}
               onClick={this.handleMenuItemClick.bind(this)}
               >People
+            </Menu.Item>
+
+            <Menu.Item
+              name="profile"
+              active={true}
+              active={this.state.activeItem === 'profile'}
+              onClick={this.handleMenuItemClick.bind(this)}
+              >Profile
             </Menu.Item>
           </Menu>
         </Segment>
