@@ -1,0 +1,21 @@
+body {
+  background: black;
+}
+.ui.segment.header h1 {
+  font-family: serif;
+}
+.ui.segment.header {
+  background: #e3dc68;
+}
+
+.ui.segment.content {
+  background: white;
+}
+
+.ui.menu {
+  background: #d3d3d3;
+}
+
+.ui.grid {
+  background: #5b5b5b;
+}
